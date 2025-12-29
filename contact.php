@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Contact Us";
-$pageDescription = "Get in touch with Flying U Technologies for your technology needs";
+$pageDescription = "Get in touch with Urquhart Web Systems LLC for your technology needs";
 
 // Initialize variables
 $formSubmitted = false;
@@ -64,7 +64,7 @@ include 'includes/header.php';
             <div class="grid">
                 <div class="card">
                     <h3>Email</h3>
-                    <p>contact@flyingutech.com</p>
+                    <p>contact@urqweb.com</p>
                     <p>admin@urquhartsystems.com</p>
                 </div>
                 <div class="card">
@@ -75,7 +75,7 @@ include 'includes/header.php';
                 <div class="card">
                     <h3>Location</h3>
                     <p>123 Tech Street</p>
-                    <p>Silicon Valley, CA 94000</p>
+                    <p>College Station, TX 77840</p>
                 </div>
                 <div class="card">
                     <h3>Business Hours</h3>

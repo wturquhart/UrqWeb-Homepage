@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "About Us";
-$pageDescription = "Learn more about Flying U Technologies and our mission to deliver exceptional technology solutions";
+$pageDescription = "Learn more about Urquhart Web Systems LLC and our mission to deliver exceptional technology solutions";
 include 'includes/header.php';
 ?>
 
@@ -8,7 +8,7 @@ include 'includes/header.php';
     <!-- Page Header -->
     <section class="hero">
         <div class="container">
-            <h1>About Flying U Technologies</h1>
+            <h1>About Urquhart Web Systems LLC</h1>
             <p>Pioneering the future of technology solutions</p>
         </div>
     </section>
@@ -18,7 +18,7 @@ include 'includes/header.php';
         <div class="container">
             <div class="content-section">
                 <h2>Our Story</h2>
-                <p>Founded with a vision to revolutionize the technology landscape, FlyingU Tech has grown from a small startup to a trusted partner for businesses worldwide. We specialize in delivering innovative solutions that combine cutting-edge technology with practical business applications.</p>
+                <p>Founded with a vision to revolutionize the technology landscape, Urquhart Web Systems has grown from a small startup to a trusted partner for businesses worldwide. We specialize in delivering innovative solutions that combine cutting-edge technology with practical business applications.</p>
                 <p>Our journey began with a simple belief: technology should empower businesses, not complicate them. This philosophy drives everything we do, from our initial consultations to ongoing support and maintenance.</p>
             </div>
         </div>

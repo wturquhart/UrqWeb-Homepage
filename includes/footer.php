@@ -2,13 +2,13 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>About Flying U Technologies</h3>
+                    <h3>About Urquhart Web Systems LLC</h3>
                     <p>We are a leading technology company dedicated to providing innovative solutions that drive business success in the digital age.</p>
                     <div class="social-links">
-                        <a href="#" title="Facebook">f</a>
-                        <a href="#" title="Twitter">??</a>
-                        <a href="#" title="LinkedIn">in</a>
-                        <a href="#" title="GitHub">gh</a>
+                        <a href="#" title="Facebook">#</a>
+                        <a href="#" title="Twitter">#</a>
+                        <a href="#" title="LinkedIn">#</a>
+                        <a href="#" title="GitHub">#</a>
                     </div>
                 </div>
                 
@@ -34,14 +34,15 @@
                 
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p>contact@flyingutech.xyz</p>
+                    <p>contact@urqweb.com</p>
+					<p>admin@urquhartsystems.com</p>
                     <p>+1 (555) 123-4567</p>
                     <p>123 Tech Street, College Station, TX 77840</p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>Flying U Technologies All rights reserved.</p>
+                <p>Urquhart Web Systems LLC All rights reserved.</p>
                 <p>Designed by Urquhart Web Systems, LLC for innovation</p>
             </div>
         </div>

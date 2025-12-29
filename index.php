@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Home";
-$pageDescription = "Flying U Technologies - Innovative technology solutions for modern businesses";
+$pageDescription = "Urquhart Web Systems LLC - Innovative technology solutions for modern businesses";
 include 'includes/header.php';
 ?>
 
@@ -15,7 +15,7 @@ include 'includes/header.php';
         
         <div class="hero-content">
             <div class="container">
-                <h1>Welcome to Flying U Technologies</h1>
+                <h1>Welcome to Urquhart Web Systems LLC</h1>
                 <p>Transforming ideas into powerful digital solutions. We deliver cutting-edge technology services that propel your business forward.</p>
                 <a href="services.php" class="btn">Explore Our Services</a>
                 <a href="contact.php" class="btn btn-secondary">Get In Touch</a>
