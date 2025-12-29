@@ -16,7 +16,7 @@ include 'includes/header.php';
         <div class="hero-content">
             <div class="container">
                 <h1>Services</h1>
-				<p>services and web solutions we currently offer</p>
+				<p>Services and web solutions we currently offer</p>
             </div>
         </div>
     </section>
