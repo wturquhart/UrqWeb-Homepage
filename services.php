@@ -5,11 +5,18 @@ include 'includes/header.php';
 ?>
 
 <main>
-    <!-- Page Header -->
-    <section class="hero">
-        <div class="container">
-            <h1>Our Services</h1>
-            <p>Comprehensive technology solutions tailored to your needs</p>
+<!-- Hero Section with Image -->
+    <section class="hero hero-with-image">
+        <!-- Hero Image: Replace 'images/hero-bg.svg' with your image path -->
+        <img src="images/hero-bg.jpg" alt="Technology Background" class="hero-image">
+        
+        <!-- Overlay options: 'dark', 'light', or 'gradient-accent' -->
+        <div class="hero-overlay gradient-accent"></div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <h1>Services</h1>
+            </div>
         </div>
     </section>
 
