@@ -6,8 +6,8 @@
     --accent-bg: #2a2a2a;
     --primary-text: #e0e0e0;
     --secondary-text: #a0a0a0;
-    --accent-color: #2323FF;   /* updated */
-    --hover-color: #1f1fd8;    /* updated hover */
+    --accent-color: #00d4ff;
+    --hover-color: #00b8e6;
     --border-color: #333333;
     --success-color: #00ff88;
     --error-color: #ff4444;
@@ -53,7 +53,7 @@ main {
 
 .hero-with-image {
     padding: 0;
-    min-height: 375px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +88,7 @@ main {
 }
 
 .hero-overlay.gradient-accent {
-    background: linear-gradient(135deg, rgba(35, 35, 255, 0.2) 0%, rgba(10, 10, 10, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(10, 10, 10, 0.9) 100%);
 }
 
 .hero-content {
@@ -135,7 +135,7 @@ main {
 .btn:hover {
     background-color: var(--hover-color);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(35, 35, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
 }
 
 .btn-secondary {
