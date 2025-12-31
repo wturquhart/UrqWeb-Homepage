@@ -59,7 +59,7 @@ include 'includes/header.php';
     <!-- CTA Section -->
     <section style="background-color: var(--secondary-bg); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
         <div class="container" style="text-align: center;">
-            <h2>Ready to Transform Your Business?</h2>
+            <h1>Ready to Transform Your Business?</h1>
             <p style="max-width: 700px; margin: 0 auto 30px;">Let's discuss how our technology solutions can help you achieve your goals.</p>
             <a href="contact.php" class="btn">Start Your Project</a>
         </div>
