@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "About Us";
-$pageDescription = "Learn more about Urquhart Web Systems LLC and our mission to deliver exceptional technology solutions";
+$pageDescription = "Learn more about Urquhart Web Systems, LLC and our mission to deliver exceptional technology solutions";
 include 'includes/header.php';
 ?>
 

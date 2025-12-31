@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Contact Us";
-$pageDescription = "Get in touch with Urquhart Web Systems LLC for your technology needs";
+$pageDescription = "Get in touch with Urquhart Web Systems, LLC for your technology needs";
 
 // Initialize variables
 $formSubmitted = false;
@@ -78,17 +78,15 @@ include 'includes/header.php';
                 <div class="card">
                     <h3>Phone</h3>
                     <p>Main: +1 (555) 123-4567</p>
-                    <p>Support: +1 (555) 123-4568</p>
                 </div>
                 <div class="card">
                     <h3>Location</h3>
-                    <p>123 Tech Street</p>
-                    <p>College Station, TX 77840</p>
+                    <p>Based in Central Texas</p>
                 </div>
                 <div class="card">
                     <h3>Business Hours</h3>
-                    <p>Monday - Friday: 9AM - 6PM</p>
-                    <p>Weekend: By Appointment</p>
+                    <p>Monday - Friday: N/A AM - N/A PM</p>
+                    <p>Weekend: N/A</p>
                 </div>
             </div>
         </div>
@@ -146,7 +144,7 @@ include 'includes/header.php';
         <div class="container">
             <div class="content-section" style="text-align: center;">
                 <h3>Visit Our Office</h3>
-                <p>We're located in the heart of Texas. Schedule a visit to discuss your project in person.</p>
+                <p>We're located in the heart of Texas. Schedule a consultation to discuss your next big project.</p>
                 <a href="#" class="btn" style="margin-top: 20px;">Schedule a Visit</a>
             </div>
         </div>
