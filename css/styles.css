@@ -53,7 +53,7 @@ main {
 
 .hero-with-image {
     padding: 0;
-    min-height: 400px;
+    min-height: 325px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,7 +269,7 @@ section p {
     }
 
     .hero-with-image {
-        min-height: 400px;
+        min-height: 325px;
     }
 
     .hero-content {
