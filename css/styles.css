@@ -53,7 +53,7 @@ main {
 
 .hero-with-image {
     padding: 0;
-    min-height: 325px;
+    min-height: 275px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +258,58 @@ section p {
     margin-bottom: 15px;
 }
 
-/* Responsive Design */
+/* Ensure default hero-image height remains compact */
+.hero-with-image { min-height: 275px; }
+.hero-with-image .hero-image { height: 275px; }
+
+/* Homepage-specific hero height override */
+.hero-homepage { min-height: 350px; }
+.hero-homepage .hero-image { height: 350px; }
+
+/* Compact / less "bubbly" overrides */
+.container { padding: 0 12px; }
+
+section { padding: 30px 0; }
+.hero { padding: 40px 0; }
+.hero-content { padding: 40px 16px; }
+
+.grid { gap: 16px; margin-top: 20px; }
+
+.card {
+    padding: 16px;
+    border-radius: 6px; /* reduce roundness */
+    box-shadow: none;   /* remove heavy shadow */
+    transition: border-color 0.2s ease, transform 0.15s ease;
+}
+.card:hover {
+    transform: translateY(-2px); /* subtle lift */
+    border-color: var(--accent-color);
+    box-shadow: 0 6px 18px rgba(0,212,255,0.06); /* much lighter */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.form-group { margin-bottom: 12px; }
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+/* Slightly reduce hero title spacing for compact look */
+.hero h1 { margin-bottom: 12px; }
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;

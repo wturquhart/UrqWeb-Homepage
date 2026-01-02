@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <main>
     <!-- Hero Section with Image -->
-    <section class="hero hero-with-image">
+    <section class="hero hero-with-image hero-homepage">
         <!-- Hero Image: Replace 'images/hero-bg.svg' with your image path -->
         <img src="images/hero-bg.jpg" alt="Technology Background" class="hero-image">
         
