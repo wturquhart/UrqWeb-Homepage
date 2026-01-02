@@ -1,4 +1,5 @@
 <?php
+session_start();
 $pageTitle = "Contact Us";
 $pageDescription = "Get in touch with Urquhart Web Systems, LLC for your technology needs";
 
@@ -6,6 +7,7 @@ $pageDescription = "Get in touch with Urquhart Web Systems, LLC for your technol
 $formSubmitted = false;
 $errors = [];
 $successMessage = '';
+$captcha_question = '';
 
 // Process form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -14,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
     $subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
     $message = isset($_POST['message']) ? trim($_POST['message']) : '';
+    $captcha_input = isset($_POST['captcha']) ? trim($_POST['captcha']) : '';
     
     // Validation
     if (empty($name)) {
@@ -33,6 +36,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($message)) {
         $errors[] = "Message is required";
     }
+
+    // Captcha validation
+    if (empty($captcha_input)) {
+        $errors[] = "Captcha answer is required";
+    } else {
+        if (!isset($_SESSION['captcha_answer']) || intval($captcha_input) !== intval($_SESSION['captcha_answer'])) {
+            $errors[] = "Incorrect captcha answer";
+        }
+    }
     
     // If no errors, process the form
     if (empty($errors)) {
@@ -43,7 +55,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         // Clear form data after successful submission
         $name = $email = $subject = $message = '';
+
+        // Clear captcha
+        unset($_SESSION['captcha_answer']);
     }
+}
+
+// Generate a simple math captcha question when the form is shown (on GET or after errors)
+if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !empty($errors)) {
+    $a = rand(1, 9);
+    $b = rand(1, 9);
+    $_SESSION['captcha_answer'] = $a + $b;
+    $captcha_question = "What is {$a} + {$b}?";
 }
 
 include 'includes/header.php';
@@ -132,6 +155,11 @@ include 'includes/header.php';
                 <div class="form-group">
                     <label for="message">Message *</label>
                     <textarea id="message" name="message" required><?php echo isset($message) ? htmlspecialchars($message) : ''; ?></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="captcha">Captcha: <?php echo htmlspecialchars($captcha_question); ?> *</label>
+                    <input type="text" id="captcha" name="captcha" value="" required>
                 </div>
                 
                 <button type="submit" class="btn" style="width: 100%;">Send Message</button>
