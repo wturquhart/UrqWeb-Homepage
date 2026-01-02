@@ -258,13 +258,13 @@ section p {
     margin-bottom: 15px;
 }
 
-/* Ensure default hero-image height remains compact */
-.hero-with-image { min-height: 275px; }
-.hero-with-image .hero-image { height: 275px; }
+/* Ensure default hero-image height remains compact and fills the section */
+.hero-with-image { padding: 0; min-height: 275px; }
+.hero-with-image .hero-image { height: 100%; }
 
-/* Homepage-specific hero height override */
+/* Homepage-specific hero height override (image fills the section) */
 .hero-homepage { min-height: 350px; }
-.hero-homepage .hero-image { height: 350px; }
+.hero-homepage .hero-image { height: 100%; }
 
 /* Compact / less "bubbly" overrides */
 .container { padding: 0 12px; }
@@ -311,31 +311,6 @@ section { padding: 30px 0; }
 .hero h1 { margin-bottom: 12px; }
 
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    .hero-with-image {
-        min-height: 325px;
-    }
-
-    .hero-content {
-        padding: 30px 12px;
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-form {
-        padding: 16px;
-    }
+    .hero-content { padding: 30px 12px; }
+    .contact-form { padding: 16px; }
 }
