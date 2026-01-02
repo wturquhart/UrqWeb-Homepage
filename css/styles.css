@@ -32,7 +32,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 12px;
 }
 
 /* Main Content */
@@ -44,7 +44,7 @@ main {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 80px 0;
+    padding: 40px 0;
     background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--primary-bg) 100%);
     border-bottom: 1px solid var(--border-color);
     position: relative;
@@ -94,12 +94,12 @@ main {
 .hero-content {
     position: relative;
     z-index: 2;
-    padding: 80px 20px;
+    padding: 40px 16px;
 }
 
 .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-text) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -120,11 +120,11 @@ main {
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 10px 20px;
     background-color: var(--accent-color);
     color: var(--primary-bg);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 4px;
     font-weight: 600;
     transition: all 0.3s ease;
     border: none;
@@ -151,7 +151,7 @@ main {
 
 /* Section Styles */
 section {
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 section h2 {
@@ -171,22 +171,22 @@ section p {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+    gap: 16px;
+    margin-top: 20px;
 }
 
 .card {
     background-color: var(--secondary-bg);
-    padding: 30px;
-    border-radius: 10px;
+    padding: 16px;
+    border-radius: 6px; /* reduce roundness */
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+    transition: border-color 0.2s ease, transform 0.15s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px); /* subtle lift */
     border-color: var(--accent-color);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+    box-shadow: 0 6px 18px rgba(0,212,255,0.06); /* much lighter */
 }
 
 .card h3 {
@@ -202,15 +202,15 @@ section p {
 /* Contact Form */
 .contact-form {
     max-width: 600px;
-    margin: 40px auto;
+    margin: 20px auto;
     background-color: var(--secondary-bg);
-    padding: 40px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .form-group label {
@@ -223,10 +223,10 @@ section p {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     background-color: var(--accent-bg);
     border: 1px solid var(--border-color);
-    border-radius: 5px;
+    border-radius: 4px;
     color: var(--primary-text);
     font-size: 1rem;
     font-family: inherit;
@@ -273,7 +273,7 @@ section p {
     }
 
     .hero-content {
-        padding: 60px 20px;
+        padding: 30px 12px;
     }
 
     section h2 {
@@ -285,6 +285,6 @@ section p {
     }
 
     .contact-form {
-        padding: 30px 20px;
+        padding: 16px;
     }
 }
