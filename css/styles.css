@@ -53,10 +53,12 @@ main {
 
 .hero-with-image {
     padding: 0;
-    min-height: 225px;
+    height: 225px; /* explicit height so content padding doesn't increase it */
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-image {
@@ -94,7 +96,7 @@ main {
 .hero-content {
     position: relative;
     z-index: 2;
-    padding: 40px 16px;
+    padding: 12px 16px; /* smaller vertical padding to fit explicit heights */
 }
 
 .hero h1 {
@@ -258,20 +260,44 @@ section p {
     margin-bottom: 15px;
 }
 
-/* Ensure default hero-image height remains compact and fills the section */
-.hero-with-image { padding: 0; min-height: 200px; }
-.hero-with-image .hero-image { height: 100%; }
+/* Ensure default hero-image height is explicit and fills the section */
+.hero-with-image {
+    padding: 0;
+    height: 225px; /* explicit height so content padding doesn't increase it */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.hero-with-image .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
 
 /* Homepage-specific hero height override (image fills the section) */
-.hero-homepage { min-height: 350px; }
+.hero-homepage {
+    height: 350px;
+}
 .hero-homepage .hero-image { height: 100%; }
+
+/* Reduce hero-content vertical padding so it doesn't force section taller */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 12px 16px; /* smaller vertical padding to fit explicit heights */
+}
 
 /* Compact / less "bubbly" overrides */
 .container { padding: 0 12px; }
 
 section { padding: 30px 0; }
 .hero { padding: 40px 0; }
-.hero-content { padding: 40px 16px; }
 
 .grid { gap: 16px; margin-top: 20px; }
 
@@ -309,6 +335,18 @@ section { padding: 30px 0; }
 
 /* Slightly reduce hero title spacing for compact look */
 .hero h1 { margin-bottom: 12px; }
+
+
+/* Fix: ensure hero-with-image ignores default .hero padding so explicit height is respected */
+.hero.hero-with-image {
+    padding: 0 !important;
+    box-sizing: border-box; /* include any padding/border in height calculation */
+}
+
+/* Also ensure homepage variant keeps its explicit height */
+.hero.hero-homepage {
+    height: 350px; /* reaffirm */
+}
 
 @media (max-width: 768px) {
     .hero-content { padding: 30px 12px; }
