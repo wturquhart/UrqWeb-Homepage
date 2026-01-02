@@ -53,7 +53,7 @@ main {
 
 .hero-with-image {
     padding: 0;
-    min-height: 275px;
+    min-height: 225px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -259,7 +259,7 @@ section p {
 }
 
 /* Ensure default hero-image height remains compact and fills the section */
-.hero-with-image { padding: 0; min-height: 275px; }
+.hero-with-image { padding: 0; min-height: 225px; }
 .hero-with-image .hero-image { height: 100%; }
 
 /* Homepage-specific hero height override (image fills the section) */
